@@ -1,0 +1,1062 @@
+{
+  "SEMIEIXO": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 3.0,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 24,
+      "Gab_max": 84.0,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "11",
+      "12",
+      "14",
+      "15",
+      "16",
+      "39"
+    ]
+  },
+  "EIXOACESSO": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 3.0,
+      "CA_max": 4.5,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 16.5,
+      "RF_Sec": 16.5,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 24,
+      "Gab_max": 84.0,
+      "Hemb_max": 19.95,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": 20.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "17",
+      "20",
+      "36",
+      "39"
+    ]
+  },
+  "EIXOORLA": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.5,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 24,
+      "Gab_max": 84.0,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "20",
+      "21",
+      "26",
+      "39"
+    ]
+  },
+  "EU1": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 3.0,
+      "CA_max": 4.5,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 13.5,
+      "RF_Sec": 13.5,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 30,
+      "Gab_max": 5.0,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "18",
+      "20",
+      "21",
+      "26",
+      "39"
+    ]
+  },
+  "EU2": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 3.0,
+      "CA_max": 4.5,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 13.5,
+      "RF_Sec": 13.5,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 24,
+      "Gab_max": 84.0,
+      "Hemb_max": 19.95,
+      "Lote_min": 600.0,
+      "UnAut_min": 600.0,
+      "Testad_min": 20.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "19",
+      "20",
+      "21",
+      "26",
+      "39"
+    ]
+  },
+  "EU3": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 3.0,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 5.0,
+      "RF_Sec": 5.0,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 24,
+      "Gab_max": 84.0,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "20",
+      "39"
+    ]
+  },
+  "EU4": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 3.0,
+      "CA_max": 4.5,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 13.5,
+      "RF_Sec": 13.5,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 24,
+      "Gab_max": 84.0,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "20",
+      "23",
+      "36",
+      "39"
+    ]
+  },
+  "MUQ1": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.4,
+      "Tocup": 0.5,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 1.5,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "37"
+    ]
+  },
+  "MUQ2": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": null,
+      "Gab_bas": null,
+      "Npav_max": null,
+      "Gab_max": null,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "10",
+      "13",
+      "14",
+      "36",
+      "39"
+    ]
+  },
+  "MUQ3": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 24,
+      "Gab_max": 84.0,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "11",
+      "13",
+      "14",
+      "39"
+    ]
+  },
+  "MUQ4": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 3.0,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 24,
+      "Gab_max": 84.0,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "36",
+      "39"
+    ]
+  },
+  "MUQ5": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": null,
+      "Gab_bas": null,
+      "Npav_max": null,
+      "Gab_max": null,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "36",
+      "39"
+    ]
+  },
+  "MUQ6": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 3.5,
+      "CA_max": 6.0,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": null,
+      "Gab_bas": null,
+      "Npav_max": null,
+      "Gab_max": null,
+      "Hemb_max": 19.95,
+      "Lote_min": 525.0,
+      "UnAut_min": 525.0,
+      "Testad_min": 15.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "36",
+      "39"
+    ]
+  },
+  "MEU": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.15,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": null,
+      "Gab_bas": null,
+      "Npav_max": null,
+      "Gab_max": null,
+      "Hemb_max": 19.95,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "29",
+      "36",
+      "39"
+    ]
+  },
+  "MUIS": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 2.5,
+      "Tperm": 0.15,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": null,
+      "Gab_bas": null,
+      "Npav_max": null,
+      "Gab_max": null,
+      "Hemb_max": 19.95,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": 20.0
+    },
+    "notes": [
+      "6",
+      "13",
+      "14",
+      "36",
+      "39"
+    ]
+  },
+  "MUCON1": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.1,
+      "Tocup": 0.6,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 7.0,
+      "Npav_max": 2,
+      "Gab_max": 7.0,
+      "Hemb_max": null,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "21",
+      "26",
+      "27",
+      "28"
+    ]
+  },
+  "MUCON2": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 3,
+      "Gab_max": 12.0,
+      "Hemb_max": 7.5,
+      "Lote_min": 360.0,
+      "UnAut_min": 288.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "13",
+      "22",
+      "28"
+    ]
+  },
+  "MUCON3": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 4,
+      "Gab_bas": 14.0,
+      "Npav_max": 6,
+      "Gab_max": 21.0,
+      "Hemb_max": 7.5,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "21",
+      "22",
+      "26",
+      "28"
+    ]
+  },
+  "MUCON4": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 6,
+      "Gab_bas": 21.0,
+      "Npav_max": 8,
+      "Gab_max": 28.0,
+      "Hemb_max": 7.5,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "21",
+      "22",
+      "26",
+      "28"
+    ]
+  },
+  "MUCON5": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 10,
+      "Gab_max": 35.0,
+      "Hemb_max": 10.5,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "21",
+      "22",
+      "26",
+      "28"
+    ]
+  },
+  "MUCON6": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 6.0,
+      "CA_max": 8.0,
+      "Tperm": 0.05,
+      "Tocup": 0.95,
+      "RF": 4.0,
+      "RF_Sec": 12.5,
+      "RLF": 0.0,
+      "Npav_bas": 8,
+      "Gab_bas": 28.0,
+      "Npav_max": 12,
+      "Gab_max": 42.0,
+      "Hemb_max": 10.5,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "22",
+      "26",
+      "31",
+      "32",
+      "33",
+      "36"
+    ]
+  },
+  "MUCON7": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 2.5,
+      "CA_max": 4.0,
+      "Tperm": 0.05,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 3,
+      "Gab_max": 12.0,
+      "Hemb_max": 7.5,
+      "Lote_min": 360.0,
+      "UnAut_min": 288.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "22",
+      "28"
+    ]
+  },
+  "ZEITA8": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.8,
+      "Tocup": 0.1,
+      "RF": 10.0,
+      "RF_Sec": 10.0,
+      "RLF": 10.0,
+      "Npav_bas": 3,
+      "Gab_bas": 12.0,
+      "Npav_max": 3,
+      "Gab_max": 12.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": []
+  },
+  "ZEITA9": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.8,
+      "Tocup": 0.1,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.5,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "35"
+    ]
+  },
+  "ZEITA1": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.35,
+      "Tocup": 0.5,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.5,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "34",
+      "35"
+    ]
+  },
+  "ZEITA2": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.35,
+      "Tocup": 0.5,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.5,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "35",
+      "41"
+    ]
+  },
+  "ZEITA3": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.35,
+      "Tocup": 0.5,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "35"
+    ]
+  },
+  "ZEITA4": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.35,
+      "Tocup": 0.5,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "35"
+    ]
+  },
+  "ZEITA5": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.35,
+      "Tocup": 0.5,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 7.0,
+      "Npav_max": 2,
+      "Gab_max": 7.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "34",
+      "35"
+    ]
+  },
+  "ZEITA6": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.0,
+      "CA_max": 1.0,
+      "Tperm": 0.35,
+      "Tocup": 0.5,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 7.0,
+      "Npav_max": 2,
+      "Gab_max": 7.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "35"
+    ]
+  },
+  "ZEITA7": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.5,
+      "CA_max": 1.5,
+      "Tperm": 0.25,
+      "Tocup": 0.6,
+      "RF": 3.0,
+      "RF_Sec": 3.0,
+      "RLF": 1.5,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "28",
+      "38"
+    ]
+  },
+  "ZET": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.5,
+      "CA_max": 1.5,
+      "Tperm": 0.3,
+      "Tocup": 0.65,
+      "RF": 4.0,
+      "RF_Sec": 8.5,
+      "RLF": 2.5,
+      "Npav_bas": 2,
+      "Gab_bas": 7.0,
+      "Npav_max": 3,
+      "Gab_max": 12.0,
+      "Hemb_max": null,
+      "Lote_min": 600.0,
+      "UnAut_min": 600.0,
+      "Testad_min": 20.0
+    },
+    "notes": [
+      "32"
+    ]
+  },
+  "ZEIS": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": null,
+      "CA_max": null,
+      "Tperm": null,
+      "Tocup": null,
+      "RF": null,
+      "RF_Sec": null,
+      "RLF": null,
+      "Npav_bas": null,
+      "Gab_bas": null,
+      "Npav_max": null,
+      "Gab_max": null,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": [
+      "25"
+    ]
+  },
+  "MUO": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 0.6,
+      "CA_max": 0.6,
+      "Tperm": 0.5,
+      "Tocup": 0.3,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 4.0,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": 2000.0,
+      "UnAut_min": 2000.0,
+      "Testad_min": 30.0
+    },
+    "notes": [
+      "31",
+      "36"
+    ]
+  },
+  "MUPA1": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 0.6,
+      "CA_max": 0.6,
+      "Tperm": 0.5,
+      "Tocup": 0.3,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 4.0,
+      "Npav_bas": 2,
+      "Gab_bas": 9.0,
+      "Npav_max": 2,
+      "Gab_max": 9.0,
+      "Hemb_max": null,
+      "Lote_min": 2000.0,
+      "UnAut_min": 2000.0,
+      "Testad_min": 30.0
+    },
+    "notes": [
+      "30",
+      "31",
+      "36"
+    ]
+  },
+  "ZEOT1": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.5,
+      "CA_max": 1.5,
+      "Tperm": 0.15,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 3,
+      "Gab_bas": 12.5,
+      "Npav_max": 3,
+      "Gab_max": 12.5,
+      "Hemb_max": 7.5,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "22",
+      "42"
+    ]
+  },
+  "ZEOT2": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 1.5,
+      "CA_max": 1.5,
+      "Tperm": 0.15,
+      "Tocup": 0.75,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 0.0,
+      "Npav_bas": 3,
+      "Gab_bas": 12.5,
+      "Npav_max": 3,
+      "Gab_max": 12.5,
+      "Hemb_max": 7.5,
+      "Lote_min": 360.0,
+      "UnAut_min": 360.0,
+      "Testad_min": 12.0
+    },
+    "notes": [
+      "22",
+      "42"
+    ]
+  },
+  "ZEOT3": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 0.3,
+      "CA_max": 0.3,
+      "Tperm": 0.8,
+      "Tocup": 0.2,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 12.0,
+      "Npav_max": 2,
+      "Gab_max": 12.0,
+      "Hemb_max": null,
+      "Lote_min": 20000.0,
+      "UnAut_min": 20000.0,
+      "Testad_min": 40.0
+    },
+    "notes": []
+  },
+  "MRO": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 0.3,
+      "CA_max": 0.3,
+      "Tperm": 0.8,
+      "Tocup": 0.2,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 12.0,
+      "Npav_max": 2,
+      "Gab_max": 12.0,
+      "Hemb_max": null,
+      "Lote_min": 20000.0,
+      "UnAut_min": 20000.0,
+      "Testad_min": 40.0
+    },
+    "notes": [
+      "36"
+    ]
+  },
+  "MRPA": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 0.3,
+      "CA_max": 0.3,
+      "Tperm": 0.8,
+      "Tocup": 0.2,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 12.0,
+      "Npav_max": 2,
+      "Gab_max": 12.0,
+      "Hemb_max": null,
+      "Lote_min": 20000.0,
+      "UnAut_min": 20000.0,
+      "Testad_min": 40.0
+    },
+    "notes": [
+      "30",
+      "36"
+    ]
+  },
+  "SETORMINERACAO": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": 0.3,
+      "CA_max": 0.3,
+      "Tperm": 0.8,
+      "Tocup": 0.2,
+      "RF": 4.0,
+      "RF_Sec": 4.0,
+      "RLF": 2.0,
+      "Npav_bas": 2,
+      "Gab_bas": 12.0,
+      "Npav_max": 2,
+      "Gab_max": 12.0,
+      "Hemb_max": null,
+      "Lote_min": 20000.0,
+      "UnAut_min": 20000.0,
+      "Testad_min": 40.0
+    },
+    "notes": []
+  },
+  "MUPA2": {
+    "indices": {
+      "CA_min": null,
+      "CA_bas": null,
+      "CA_max": null,
+      "Tperm": null,
+      "Tocup": null,
+      "RF": null,
+      "RF_Sec": null,
+      "RLF": null,
+      "Npav_bas": null,
+      "Gab_bas": null,
+      "Npav_max": null,
+      "Gab_max": null,
+      "Hemb_max": null,
+      "Lote_min": null,
+      "UnAut_min": null,
+      "Testad_min": null
+    },
+    "notes": []
+  }
+}

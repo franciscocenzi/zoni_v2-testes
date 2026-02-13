@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PainelPrincipal</class>
+ <widget class="QDialog" name="PainelPrincipal">
+  <property name="windowTitle">
+   <string>Zôni v2 – Análise Urbanística</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Seleção de lote -->
+   <item>
+    <widget class="QLabel" name="lblSelecao">
+     <property name="text">
+      <string>Selecione um lote no mapa:</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btnSelecionarLote">
+     <property name="text">
+      <string>Selecionar lote</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Notas do Anexo III -->
+   <item>
+    <widget class="QLabel" name="lblNotas">
+     <property name="text">
+      <string>Notas do Anexo III:</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QCheckBox" name="chkNota10">
+     <property name="text">
+      <string>Ativar Nota 10</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QCheckBox" name="chkNota37">
+     <property name="text">
+      <string>Ativar Nota 37</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Botão de análise -->
+   <item>
+    <widget class="QPushButton" name="btnAnalisar">
+     <property name="text">
+      <string>Executar análise</string>
+     </property>
+     <property name="minimumHeight">
+      <number>40</number>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Área de mensagens -->
+   <item>
+    <widget class="QTextBrowser" name="txtMensagens">
+     <property name="minimumHeight">
+      <number>120</number>
+     </property>
+     <property name="placeholderText">
+      <string>Mensagens do sistema aparecerão aqui…</string>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

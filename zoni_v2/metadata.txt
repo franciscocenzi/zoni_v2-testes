@@ -1,0 +1,15 @@
+[general]
+name=Zôni v2
+description=Núcleo de análise urbanística (zoneamento, APP e risco) para Porto Belo/SC.
+qgisMinimumVersion=3.22
+version=2.0.0.005
+author=Francisco Cenzi De Ré
+email=
+about=Plugin experimental para testes do núcleo Zôni v2, com relatório HTML básico.
+category=Analysis
+tracker=
+repository=
+home=
+experimental=True
+deprecated=False
+plugin_type=python

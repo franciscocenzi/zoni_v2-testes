@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<style>
+  @page {
+    size: A4;
+    margin-top: 40mm;    /* 4 cm */
+    margin-left: 30mm;   /* 3 cm */
+    margin-bottom: 25mm; /* 2,5 cm */
+    margin-right: 25mm;  /* 2,5 cm */
+    @top-center { content: element(page-header) }
+    @bottom-center { content: element(page-footer) }
+  }
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    color: #000;
+    margin: 0;
+  }
+  #page-header {
+    position: running(page-header);
+    text-align: center;
+    font-size: 10pt;
+    line-height: 1.2;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000;
+  }
+  #page-footer {
+    position: running(page-footer);
+    text-align: center;
+    font-size: 10pt;
+    padding-top: 6px;
+    border-top: 1px solid #000;
+  }
+  .page-number:before { content: counter(page); }
+  .page-count:before { content: counter(pages); }
+
+  h1 { font-size: 16pt; text-align: center; margin: 8px 0 6px; }
+  h2 { font-size: 14pt; margin: 14px 0 6px; }
+  h3 { font-size: 12pt; margin: 12px 0 4px; }
+  p { margin: 0 0 6px; line-height: 1.25; }
+  ul { margin: 0 0 8px 18px; padding: 0; }
+  .section { margin-bottom: 12px; }
+  .strong { font-weight: bold; }
+  .underline { text-decoration: underline; }
+  table { width: 100%; border-collapse: collapse; margin: 4px 0 10px; font-size: 10pt; }
+  th, td { border: 1px solid #999; padding: 4px 6px; vertical-align: top; }
+  th { background: #f2f2f2; }
+  .no-break { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div id="page-header">
+  ESTADO DE SANTA CATARINA<br>
+  PREFEITURA MUNICIPAL DE PORTO BELO<br>
+  SECRETARIA DE PLANEJAMENTO URBANO<br>
+  Rua Irineu José Moreira, 156, Bairro Centro, Porto Belo/SC CEP 88.210-000 – Telefone: (0**47) 3369-8649
+</div>
+
+<div id="page-footer">
+  Página <span class="page-number"></span> de <span class="page-count"></span>
+</div>
+
+<h1>RELATÓRIO XX-«PROCESSO»/«ANO»/SePlan</h1>
+<h2>Xª Análise de Projeto Arquitetônico</h2>
+
+<!-- restante do corpo igual ao exemplo anterior, com os campos «VAR» -->
+</body>
+</html>

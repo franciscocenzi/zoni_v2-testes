@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 10pt;
+        color: #000000;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 14pt;
+        margin-bottom: 6px;
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        padding-bottom: 2px;
+    }
+
+    h2 {
+        font-size: 12pt;
+        margin-top: 14px;
+        margin-bottom: 6px;
+        color: #000000;
+    }
+
+    .section {
+        margin-bottom: 12px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-size: 9pt;
+    }
+
+    table th {
+        text-align: left;
+        background: #f2f2f2;
+        padding: 4px;
+        border-bottom: 1px solid #aaaaaa;
+        font-weight: bold;
+    }
+
+    table td {
+        padding: 4px;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .note-list {
+        margin-top: 4px;
+        padding-left: 18px;
+    }
+
+    .note-list li {
+        margin-bottom: 2px;
+    }
+
+    .small {
+        font-size: 8pt;
+    }
+
+    .debug {
+        margin-top: 16px;
+        padding: 8px;
+        border: 1px dashed #999999;
+        background: #f9f9f9;
+        font-size: 8pt;
+    }
+</style>
+</head>
+<body>
+
+<h1>Relatório de Parâmetros Urbanísticos – Zôni</h1>
+
+<div class="section">
+    <h2>0. Dados Cadastrais</h2>
+    <table>
+        {DADOS_CADASTRAIS}
+    </table>
+</div>
+
+<div class="section">
+    <h2>1. Dados Básicos do Lote/Gleba</h2>
+    <table>
+        <tr>
+            <th>Tipo de Análise</th>
+            <td>{TIPO_ANALISE}</td>
+        </tr>
+        <tr>
+            <th>Quantidade de Lotes Considerados</th>
+            <td>{N_LOTES}</td>
+        </tr>
+        <tr>
+            <th>Área Total Considerada (m²)</th>
+            <td>{AREA_LOTE}</td>
+        </tr>
+        <tr>
+            <th>Número de Testadas</th>
+            <td>{N_TESTADAS}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>2. Limites do Terreno (Testadas e Divisas)</h2>
+    <table>
+        <tr>
+            <th>Limite</th>
+            <th>Comprimento (m)</th>
+        </tr>
+        {TABELA_TESTADAS}
+    </table>
+    <p class="small">
+        Testadas: limites do terreno com frente para logradouro público (rua, avenida, praça, servidão etc.).<br>
+        Divisas: limites em confrontação com outros imóveis, públicos ou privados.
+    </p>
+</div>
+
+<div class="section">
+    <h2>3. Zoneamentos Incidentes</h2>
+    <table>
+        <tr>
+            <th>Zona</th>
+            <th>Área (m²)</th>
+            <th>Percentual (%)</th>
+        </tr>
+        {TABELA_ZONAS}
+    </table>
+
+    <p><b>Zona de referência para síntese de índices:</b> {ZONA_PRINCIPAL}</p>
+    <p><b>Justificativa / observações sobre aplicação de parâmetros:</b><br>
+        {JUSTIFICATIVA}
+    </p>
+</div>
+
+<div class="section">
+    <h2>4. Parâmetros Urbanísticos Aplicáveis</h2>
+    <table>
+        <tr><th colspan="2">Coeficiente de Aproveitamento (CA)</th></tr>
+        <tr><td>CA Mínimo</td><td>{CA_MIN}</td></tr>
+        <tr><td>CA Básico</td><td>{CA_BAS}</td></tr>
+        <tr><td>CA Máximo Ajustado</td><td>{CA_MAX_AJ}</td></tr>
+
+        <tr><th colspan="2">Taxas</th></tr>
+        <tr><td>Taxa de Permeabilidade do Solo (TPS)</td><td>{TPS}</td></tr>
+        <tr><td>Taxa de Ocupação do Solo (TOS)</td><td>{TOS}</td></tr>
+
+        <tr><th colspan="2">Recuos</th></tr>
+        <tr><td>Recuo Frontal Mínimo</td><td>{RF}</td></tr>
+        <tr><td>Recuo Frontal com Espelho d’Água / Via Secundária</td><td>{RFU}</td></tr>
+        <tr><td>Recuos Laterais/Fundos</td><td>{RL}</td></tr>
+
+        <tr><th colspan="2">Edificação</th></tr>
+        <tr><td>Nº de Pavimentos Básico</td><td>{NP_BAS}</td></tr>
+        <tr><td>Nº de Pavimentos Máximo Ajustado</td><td>{NP_MAX_AJ}</td></tr>
+        <tr><td>Altura Máxima de Embasamento</td><td>{HEMB}</td></tr>
+        <tr><td>Vagas Mínimas Estimadas</td><td>{VAGAS}</td></tr>
+    </table>
+    <p class="small">
+        (3) Caso haja aberturas voltadas para limites laterais ou de fundos, aplica-se a regra específica
+        prevista na nota (3) da tabela de parâmetros urbanísticos (Anexo III da LC 275/2025).<br>
+        (13) Quando houver torre recuada sobre embasamento, o recuo frontal da torre deve ser calculado
+        conforme a fórmula indicada na nota (13) da mesma tabela.
+    </p>
+</div>
+
+<div class="section">
+    <h2>5. Notas e Condicionantes Aplicadas</h2>
+    <ul class="note-list">
+        {LISTA_NOTAS}
+    </ul>
+</div>
+
+<p class="small">
+    Relatório gerado automaticamente pelo plugin Zôni (QGIS).<br>
+    Os parâmetros são uma síntese da legislação vigente e dependem da correção
+    das camadas de zoneamento, dos parâmetros cadastrados no plugin e das notas associadas.
+</p>
+
+<div class="debug">
+    <strong>Debug do contexto entregue ao template (DEBUG_CTX):</strong><br>
+    {DEBUG_CTX}
+</div>
+
+</body>
+</html>

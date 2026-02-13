@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+    /* Estilos para tela */
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 10pt;
+        color: #000000;
+        padding: 8px;
+        background-color: transparent;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 25px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        border-radius: 5px;
+    }
+
+    .header {
+        text-align: center;
+        border-bottom: 3px solid #666666; /* Azul -> Cinza */
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 14pt;
+        margin-bottom: 4px;
+        color: #333333; /* Azul -> Cinza escuro */
+    }
+
+    .header h2 {
+        font-size: 11pt;
+        margin-top: 0;
+        margin-bottom: 8px;
+        color: #444444;
+        font-weight: normal;
+    }
+
+    .header .meta {
+        color: #666666;
+        font-size: 9pt;
+        margin-top: 8px;
+    }
+
+    h1 {
+        font-size: 14pt;
+        margin-bottom: 6px;
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        padding-bottom: 2px;
+    }
+
+    h2 {
+        font-size: 12pt;
+        margin-top: 14px;
+        margin-bottom: 8px;
+        color: #444444; /* Azul -> Cinza escuro */
+    }
+
+    .section {
+        margin-bottom: 16px;
+        padding: 12px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        background-color: #ffffff; /* Fundo branco */
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 6px;
+        margin-bottom: 10px;
+        font-size: 9pt;
+    }
+
+    table th {
+        text-align: left;
+        background: #f0f0f0; /* Azul claro -> Cinza claro */
+        padding: 6px 8px;
+        border-bottom: 1px solid #aaaaaa;
+        font-weight: bold;
+        color: #333333; /* Azul -> Cinza escuro */
+    }
+
+    table td {
+        padding: 6px 8px;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .note-list {
+        margin-top: 4px;
+        padding-left: 20px;
+    }
+
+    .note-list li {
+        margin-bottom: 3px;
+    }
+
+    .small {
+        font-size: 8pt;
+        color: #666666;
+    }
+
+    .debug {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px dashed #999999;
+        background: #f9f9f9;
+        font-size: 8pt;
+        display: none;
+    }
+
+    /* Novos estilos - MANTIDAS CORES ORIGINAIS para badges e alerts */
+    .badge {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-size: 8pt;
+        font-weight: bold;
+        margin-right: 6px;
+    }
+
+    /* MANTIDAS CORES ORIGINAIS dos badges */
+    .badge-eixo { background: #e3f2fd; color: #1565c0; }
+    .badge-especial { background: #f3e5f5; color: #7b1fa2; }
+    .badge-macro { background: #e8f5e9; color: #2e7d32; }
+    .badge-ordinaria { background: #fff3e0; color: #ef6c00; }
+
+    .alert {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+        font-size: 9pt;
+    }
+
+    /* MANTIDAS CORES ORIGINAIS dos alerts */
+    .alert-high {
+        background: #ffebee;
+        border-left: 4px solid #f44336;
+        color: #c62828;
+    }
+
+    .alert-medium {
+        background: #fff8e1;
+        border-left: 4px solid #ffc107;
+        color: #ff8f00;
+    }
+
+    .alert-low {
+        background: #e8f5e9;
+        border-left: 4px solid #4caf50;
+        color: #2e7d32;
+    }
+
+    .param-group {
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .param-group:last-child {
+        border-bottom: none;
+    }
+
+    .footer {
+        margin-top: 25px;
+        padding-top: 15px;
+        border-top: 1px solid #dddddd;
+        color: #666666;
+        font-size: 8pt;
+        text-align: center;
+    }
+
+    .legenda {
+        font-size: 8pt;
+        color: #666666;
+        margin-top: 6px;
+    }
+
+    .legenda span {
+        margin-right: 10px;
+    }
+
+    .status {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 3px;
+        font-size: 8pt;
+        font-weight: bold;
+    }
+
+    /* MANTIDAS CORES ORIGINAIS dos status */
+    .status-presente { background: #e8f5e9; color: #2e7d32; }
+    .status-ausente { background: #f5f5f5; color: #666; }
+    .status-alerta { background: #fff3e0; color: #ef6c00; }
+
+    .controls {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    .controls button {
+        font-size: 9pt;
+        padding: 4px 8px;
+        margin-left: 5px;
+        background: #666666; /* Azul -> Cinza */
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .controls button:hover {
+        background: #555555;
+    }
+
+    .highlight {
+        background-color: #f9f9f9; /* Amarelo claro -> Cinza claro */
+        padding: 8px;
+        border-left: 4px solid #999999; /* Amarelo -> Cinza */
+        margin: 10px 0;
+    }
+
+    .warning {
+        background-color: #fafafa; /* Laranja claro -> Cinza claro */
+        padding: 8px;
+        border-left: 4px solid #777777; /* Vermelho -> Cinza */
+        margin: 10px 0;
+    }
+
+    /* Estilos para a tabela de inclinação - MANTIDAS CORES ORIGINAIS */
+    .inclinacao-cor {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 8px;
+        border: 1px solid #cccccc;
+        vertical-align: middle;
+    }
+    
+    .app-flag {
+        background-color: #d7191c; /* MANTIDA COR ORIGINAL */
+        color: white;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-size: 8pt;
+        font-weight: bold;
+    }
+
+    /* Classes para cores de APP/Riscos - MANTIDAS CORES ORIGINAIS */
+    .status-inundacao-alta { background: #ffebee; color: #c62828; }
+    .status-inundacao-media { background: #fff3e0; color: #f57c00; }
+    .status-inundacao-baixa { background: #f1f8e9; color: #33691e; }
+    
+    .status-movimento-alta { background: #ffebee; color: #c62828; }
+    .status-movimento-media { background: #fff3e0; color: #f57c00; }
+    .status-movimento-baixa { background: #f1f8e9; color: #33691e; }
+
+    /* Estilos para impressão/PDF */
+    @media print {
+        body {
+            background-color: white !important;
+            font-size: 9pt;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0;
+            padding: 15px;
+            box-shadow: none;
+            border-radius: 0;
+            background-color: white !important;
+        }
+        
+        /* Esconder elementos não desejados na impressão */
+        .controls,
+        .debug,
+        button {
+            display: none !important;
+        }
+        
+        /* Números de página no canto inferior direito */
+        @page {
+            margin-top: 2cm;
+            margin-bottom: 2.5cm;
+            
+            @bottom-right {
+                content: "Página " counter(page) " de " counter(pages);
+                font-size: 8pt;
+                color: #666666;
+                font-family: "Segoe UI", Arial, sans-serif;
+            }
+            
+            @bottom-left {
+                content: "Este é um documento técnico para referência. Consulte a legislação vigente para decisões finais e aplicação em projetos.";
+                font-size: 7pt;
+                color: #666666;
+                font-style: italic;
+                font-family: "Segoe UI", Arial, sans-serif;
+            }
+        }
+        
+        /* Evitar quebra de página em elementos importantes */
+        h1, h2, h3 {
+            page-break-after: avoid;
+        }
+        
+        .section {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        
+        table {
+            page-break-inside: avoid;
+        }
+        
+        .header {
+            page-break-before: always;
+        }
+        
+        /* Garantir que as cores sejam visíveis na impressão */
+        .badge-eixo,
+        .badge-especial,
+        .badge-macro,
+        .badge-ordinaria,
+        .alert-high,
+        .alert-medium,
+        .alert-low,
+        .status-presente,
+        .status-ausente,
+        .status-alerta,
+        .app-flag {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color-adjust: exact !important;
+        }
+        
+        /* Garantir que as cores da tabela de inclinação sejam visíveis */
+        .inclinacao-cor,
+        .color-1, .color-2, .color-3, .color-4, .color-5, .color-6 {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color-adjust: exact !important;
+            border: 1px solid #999999 !important;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Cabeçalho Institucional -->
+    <div class="header">
+        <h1>PREFEITURA MUNICIPAL DE PORTO BELO/SC</h1>
+        <h2>Secretaria Municipal de Planejamento Urbano</h2>
+        <h2>Relatório de Análise Urbanística - Zôni v2</h2>
+        <div class="meta">
+            <p>Gerado em: <strong>{DATA_COMPLETA}</strong> às <strong>{HORA}</strong> | Sistema: Zôni v2 ({VERSAO})</p>
+            <p>Tipo de análise: <strong>{TIPO_ANALISE}</strong></p>
+        </div>
+    </div>
+
+    <!-- Dados Cadastrais -->
+    <div class="section">
+        <h2>1. Dados Cadastrais</h2>
+        <table>
+            {DADOS_CADASTRAIS}
+        </table>
+    </div>
+
+    <!-- Dados Básicos -->
+    <div class="section">
+        <h2>2. Dados Básicos do Lote/Gleba</h2>
+        <table>
+            <tr>
+                <th width="40%">Tipo de Análise</th>
+                <td>{TIPO_ANALISE}</td>
+            </tr>
+            <tr>
+                <th>Quantidade de Lotes Considerados</th>
+                <td>{N_LOTES}</td>
+            </tr>
+            <tr>
+                <th>Área Total Considerada (m²)</th>
+                <td>{AREA_LOTE}</td>
+            </tr>
+            <tr>
+                <th>Número de Testadas</th>
+                <td>{N_TESTADAS}</td>
+            </tr>
+            <tr>
+                <th>Testada Principal</th>
+                <td>{TESTADA_PRINCIPAL}</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Limites do Terreno -->
+    <div class="section">
+        <h2>3. Limites do Terreno (Testadas e Divisas)</h2>
+        <table>
+            <tr>
+                <th>Limite</th>
+                <th>Comprimento (m)</th>
+            </tr>
+            {TABELA_TESTADAS}
+        </table>
+        <p class="small">
+            <strong>Testadas:</strong> limites do terreno com frente para logradouro público (rua, avenida, praça, servidão etc.)<br>
+            <strong>Divisas:</strong> limites em confrontação com outros imóveis, públicos ou privados
+        </p>
+    </div>
+
+    <!-- Zoneamentos Incidentes -->
+    <div class="section">
+        <h2>4. Zoneamentos Incidentes</h2>
+        <table>
+            {TABELA_ZONAS}
+        </table>
+
+        <div class="legenda">
+            <span class="badge badge-eixo">EIXO</span>
+            <span class="badge badge-especial">ESPECIAL</span>
+            <span class="badge badge-macro">MACRO</span>
+            <span class="badge badge-ordinaria">ORDINÁRIA</span>
+        </div>
+
+        <div class="highlight">
+            <p><strong>Zona de referência para síntese de índices:</strong> {ZONA_PRINCIPAL}</p>
+            <p><strong>Justificativa / observações sobre aplicação de parâmetros:</strong><br>
+            {JUSTIFICATIVA}</p>
+        </div>
+    </div>
+
+    <!-- Parâmetros Urbanísticos -->
+    <div class="section">
+        <h2>5. Parâmetros Urbanísticos Aplicáveis</h2>
+        
+        <div class="param-group">
+            <h3>Coeficiente de Aproveitamento (CA)</h3>
+            <table>
+                <tr><td width="70%">CA Mínimo</td><td>{CA_MIN}</td></tr>
+                <tr><td>CA Básico</td><td>{CA_BAS}</td></tr>
+                <tr><td>CA Máximo Ajustado</td><td>{CA_MAX_AJ}</td></tr>
+            </table>
+        </div>
+
+        <div class="param-group">
+            <h3>Taxas</h3>
+            <table>
+                <tr><td width="70%">Taxa de Permeabilidade do Solo (TPS)</td><td>{TPS}</td></tr>
+                <tr><td>Taxa de Ocupação do Solo (TOS)</td><td>{TOS}</td></tr>
+            </table>
+        </div>
+
+        <div class="param-group">
+            <h3>Recuos</h3>
+            <table>
+                <tr><td width="70%">Recuo Frontal Mínimo</td><td>{RF}</td></tr>
+                <tr><td>Recuo Frontal com Espelho d'Água / Via Secundária</td><td>{RFU}</td></tr>
+                <tr><td>Recuos Laterais/Fundos</td><td>{RL}</td></tr>
+            </table>
+        </div>
+
+        <div class="param-group">
+            <h3>Edificação</h3>
+            <table>
+                <tr><td width="70%">Nº de Pavimentos Básico</td><td>{NP_BAS}</td></tr>
+                <tr><td>Nº de Pavimentos Máximo Ajustado</td><td>{NP_MAX_AJ}</td></tr>
+                <tr><td>Altura Máxima de Embasamento (m)</td><td>{HEMB}</td></tr>
+                <tr><td>Vagas Mínimas Estimadas</td><td>{VAGAS}</td></tr>
+            </table>
+        </div>
+
+        <div class="warning">
+            <p class="small">
+                <strong>Notas importantes:</strong><br>
+                (3) Caso haja aberturas voltadas para limites laterais ou de fundos, aplica-se a regra específica
+                prevista na nota (3) da tabela de parâmetros urbanísticos (Anexo III da LC 275/2025).<br>
+                (13) Quando houver torre recuada sobre embasamento, o recuo frontal da torre deve ser calculado
+                conforme a fórmula indicada na nota (13) da mesma tabela.
+            </p>
+        </div>
+    </div>
+
+    <!-- APP -->
+    <div class="section">
+        <h2>6. Áreas de Preservação Permanente (APP)</h2>
+        <table>
+            <tr>
+                <th width="30%">Tipo de APP</th>
+                <th width="20%">Status</th>
+                <th width="20%">Largura Faixa</th>
+                <th width="30%">Observações</th>
+            </tr>
+            <tr>
+                <td>Faixa NUIC (curso d'água)</td>
+                <td><span class="status {APP_FAIXA_CLASSE}">{APP_FAIXA_STATUS}</span></td>
+                <td>{APP_FAIXA_LARGURA}</td>
+                <td>{APP_FAIXA_OBS}</td>
+            </tr>
+            <tr>
+                <td>Manguezal</td>
+                <td><span class="status {APP_MANGUE_CLASSE}">{APP_MANGUE_STATUS}</span></td>
+                <td>-</td>
+                <td>{APP_MANGUE_OBS}</td>
+            </tr>
+        </table>
+        <p class="small">
+            <strong>Base:</strong> Camadas AMFRI_PB_LLNUIAPP e AMFRI_PB_Area_Manguezal
+        </p>
+    </div>
+
+    <!-- Riscos -->
+    <div class="section">
+        <h2>7. Riscos Geoambientais</h2>
+        <table>
+            <tr>
+                <th width="25%">Tipo de Risco</th>
+                <th width="20%">Classe</th>
+                <th width="20%">Grau</th>
+                <th width="35%">Recomendações</th>
+            </tr>
+            <tr>
+                <td>Inundação</td>
+                <td>{RISCO_INUND_CLASSE}</td>
+                <td><span class="status {RISCO_INUND_COR}">{RISCO_INUND_GRAU}</span></td>
+                <td>{RISCO_INUND_RECOM}</td>
+            </tr>
+            <tr>
+                <td>Movimento de Massa</td>
+                <td>{RISCO_MOV_CLASSE}</td>
+                <td><span class="status {RISCO_MOV_COR}">{RISCO_MOV_GRAU}</span></td>
+                <td>{RISCO_MOV_RECOM}</td>
+            </tr>
+        </table>
+        <p class="small">
+            <strong>Base:</strong> Camadas AMFRI_PB_Suscetibilidade_Inundacao e AMFRI_PB_Suscetibilidade_Movimento_Massa
+        </p>
+    </div>
+
+    <!-- Inclinação do Terreno -->
+    <div class="section">
+        <h2>8. Inclinação do Terreno</h2>
+        <table>
+            <tr>
+                <th width="30%">Faixa de Inclinação</th>
+                <th width="15%">Cor</th>
+                <th width="20%">Área (m²)</th>
+                <th width="15%">% da Área</th>
+                <th width="20%">Status APP</th>
+            </tr>
+            {TABELA_INCLINACAO}
+        </table>
+        <p class="small">
+            <strong>Base:</strong> Camada raster de inclinação (PB.slope.graus)<br>
+            <strong>Legenda de cores:</strong>
+            <span style="background-color:#1a9641; color:white; padding:2px 6px; margin:0 5px;">≤ 3°</span>
+            <span style="background-color:#fbfdbc; padding:2px 6px; margin:0 5px;">3°-8°</span>
+            <span style="background-color:#fee4a1; padding:2px 6px; margin:0 5px;">8°-15°</span>
+            <span style="background-color:#fec981; padding:2px 6px; margin:0 5px;">15°-30°</span>
+            <span style="background-color:#fdae61; padding:2px 6px; margin:0 5px;">30°-45°</span>
+            <span style="background-color:#d7191c; color:white; padding:2px 6px; margin:0 5px;">> 45° (APP)</span><br>
+            <strong>Nota:</strong> Áreas com inclinação superior a 45° são consideradas APP conforme legislação ambiental.
+        </p>
+    </div>
+
+    <!-- Notas e Condicionantes -->
+    <div class="section">
+        <h2>9. Notas e Condicionantes Aplicadas</h2>
+        
+        <!-- Notas Técnicas do Anexo III -->
+        {if LISTA_NOTAS_ANEXO}
+        <div class="alert alert-medium">
+            <strong>Notas Técnicas do Anexo III:</strong>
+            <ul class="note-list">
+                {LISTA_NOTAS_ANEXO}
+            </ul>
+        </div>
+        {endif}
+
+        <!-- Condicionantes Urbanísticas -->
+        {if LISTA_CONDICIONANTES}
+        <div class="alert alert-low">
+            <strong>Condicionantes Urbanísticas:</strong>
+            <ul class="note-list">
+                {LISTA_CONDICIONANTES}
+            </ul>
+        </div>
+        {endif}
+
+        <!-- Restrições e Pendências -->
+        {if LISTA_RESTRICOES}
+        <div class="alert alert-high">
+            <strong>Restrições e Pendências:</strong>
+            <ul class="note-list">
+                {LISTA_RESTRICOES}
+            </ul>
+        </div>
+        {endif}
+
+        <!-- Placeholder antigo (para compatibilidade) -->
+        {if LISTA_NOTAS}
+        <div class="alert alert-medium">
+            <strong>Observações Gerais:</strong>
+            <ul class="note-list">
+                {LISTA_NOTAS}
+            </ul>
+        </div>
+        {endif}
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>
+            <strong>Lei Complementar nº 275/2025</strong> - Plano Diretor Municipal de Porto Belo<br>
+            Anexo III - Zoneamento e Parâmetros Urbanísticos<br>
+            Relatório gerado automaticamente pelo Sistema Zôni v2 ({VERSAO})<br>
+            <em>Este é um documento técnico para análise interna. Consulte a legislação vigente para decisões finais.</em>
+        </p>
+    </div>
+
+    <!-- Debug (não aparece na impressão) -->
+    <div class="debug" id="debug-section">
+        <h3>DEBUG - Contexto Completo</h3>
+        {DEBUG_CTX}
+    </div>
+</div>
+
+<script>
+    function toggleDebug() {
+        var debug = document.getElementById('debug-section');
+        debug.style.display = debug.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Processa condicionais do template
+    document.addEventListener('DOMContentLoaded', function() {
+        // Substitui {if ...} e {endif} por manipulação de DOM
+        var elements = document.querySelectorAll('[class*="alert"]');
+        elements.forEach(function(el) {
+            if (el.innerHTML.indexOf('<li>') === -1 || el.innerHTML.indexOf('<li>Nenhum</li>') !== -1) {
+                el.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
